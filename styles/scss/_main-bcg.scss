@@ -1,0 +1,49 @@
+@import './_var.scss';
+
+.section-gradient {
+    background: $gradient-supersoft;
+    border-radius: 0 0 12px 12px;
+    min-height: 100vh;
+    margin-bottom: 20px;
+    position: relative;
+
+    &__shadow {
+        position: absolute;
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    &__shadow--1 {
+        bottom: -10px;
+        width: calc(100% - 40px);
+        left: 20px;
+        background: #CACADB;
+    }
+
+    &__shadow--2 {
+        bottom: -20px;
+        width: calc(100% - 80px);
+        left: 40px;
+        background: #E7E7F2;
+    }
+}
+
+.section-main {
+    min-height: 100vh;
+    position: relative;
+
+    &__wrap {
+        min-height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        overflow-x: hidden;
+
+        &__img {
+            position: absolute;
+            height: 100%;
+        }
+    }
+}

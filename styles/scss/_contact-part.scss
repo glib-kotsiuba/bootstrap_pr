@@ -1,0 +1,126 @@
+@import './_var.scss';
+
+.main-box {
+    min-height: 100vh;
+
+    &>main {
+        flex-grow: 1;
+    }
+}
+
+.contact {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    flex-direction: column;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        padding: 60px 30px;
+        gap: 60px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+    }
+
+    &__adress {
+        gap: 30px;
+
+        @media screen and (min-width: 1024px) {
+            width: 50%;
+        }
+
+        & p {
+            margin: 0 0 0 0;
+
+            &:nth-child(2) {
+                color: $active-reg;
+                margin-top: 15px;
+            }
+        }
+
+        &>div {
+            border-top: 4px solid $grey-separator;
+            border-bottom: 4px solid $grey-separator;
+            padding: 30px 0;
+        }
+
+        &-link {
+            &:hover .fb-logo {
+                fill: $accent-color;
+            }
+
+            width: fit-content;
+            text-decoration: none;
+            color: $active-reg;
+            font-weight: $font-700;
+            font-size: $date-size;
+            text-transform: uppercase;
+
+            &>span {
+                margin: 3px 0 0 10px;
+            }
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+
+    &__form {
+        background-color: $grey-bg;
+        border-radius: 12px;
+
+        &>.h2 {
+            font-size: $h2-size;
+            font-weight: $font-700;
+            padding: 30px;
+            margin: 0 0 0 0;
+        }
+
+        &-button {
+            color: $white-color;
+            padding: 18px 0;
+            border: transparent;
+            border-radius: 12px;
+            background: $active-reg;
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        }
+
+        &>form {
+            padding: 0 30px 30px;
+            gap: 30px;
+        }
+
+        & input {
+            border-radius: 8px;
+            border: transparent;
+        }
+
+        &-box {
+            gap: 15px;
+        }
+
+        &_input {
+            padding: 15px;
+            font-size: $h4-size;
+            font-weight: $font-400;
+            color: $grey-txt;
+
+            &-message {
+                min-height: 101px;
+                border-radius: 8px;
+                border: transparent;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 50%;
+        }
+    }
+}
+
+.grey-section {
+    background-color: $grey-bg;
+}

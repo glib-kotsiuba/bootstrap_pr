@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Team
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+        link(rel="stylesheet", href="../styles/team.min.css")
+    body
+        .d-flex.flex-column.justify-content-between.main-flex
+            include ./partials/header_white.pug
+            main.main-grid__container.flex-grow-1.d-flex.align-items-center
+                .main-grid
+                    img.main-grid__img(src="../assets/team_page/img/team_photos/team_5.png", alt="")
+                    .main-grid__info
+                        h1.h2.h-adaptive Oksana Kobzar
+                        .d-flex.main-grid__info-links
+                            span.teamcard_job Equity partner, Attorney-at-law
+                            span.dot-separator
+                            a(href="#") kobzar@forstudy.space
+                            span.dot-separator
+                            a(href="#") Linkedin profile
+                    .main-grid__txt.d-flex.flex-column
+                        p Oksana heads the practice of international trade and shipping. He specializes in resolving disputes related to the purchase and sale of raw materials and transportation of goods by sea.<br><br>Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents, container lines, as well as international banks and P&I clubs.
+                        div
+                            h2.h5 education
+                            p National University "Odessa Law Academy", Master of Law.
+                        div
+                            h2.h5 experience
+                            p Her professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Danilo also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine
+            .grey-section
+                include ./partials/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')

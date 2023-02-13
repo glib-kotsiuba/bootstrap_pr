@@ -1,0 +1,79 @@
+@import './_var.scss';
+
+.footer {
+    &_border {
+        border-top: 2px solid $grey-separator;
+        padding-top: 30px;
+    }
+
+    &__container {
+        max-width: 1600px;
+        width: 100%;
+        padding: 30px 0;
+        margin: 0 auto;
+
+        padding: 0 30px 30px;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 60px 30px;
+        }
+    }
+
+    &__adress {
+        margin-bottom: 10px;
+        color: $main-color;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 0 0 0;
+        }
+    }
+
+    &__separator {
+        color: $grey-txt;
+        margin: 0 10px;
+    }
+
+    &__telephone {
+        color: $alt-color;
+        margin: 10px 0;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 0 0 0;
+        }
+    }
+
+    &__mail {
+        color: $active-reg;
+        font-size: $h4-size;
+        font-weight: $font-700;
+        margin: 0 0 0 0;
+    }
+
+    &__copyright {
+        color: $grey-txt;
+        font-size: $h4-size;
+        font-weight: $font-400;
+
+        &__bottom {
+            margin-top: 30px;
+        }
+    }
+
+    &__map-link {
+        color: $active-reg;
+        font-size: $date-size;
+        font-weight: $font-700;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    &__box1 {
+        margin-bottom: 21px;
+    }
+
+}

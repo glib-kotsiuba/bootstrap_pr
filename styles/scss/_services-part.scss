@@ -1,0 +1,178 @@
+@import './_var.scss';
+
+.main-section {
+    &__header {
+        margin: 0 auto;
+
+        &-slash {
+
+            &~.header-current {
+                margin: 0 0 0 0;
+            }
+        }
+    }
+}
+
+.cards-main {
+    &__header {
+        padding: 30px 0;
+        margin: 0 0 0 0;
+
+        @media screen and (min-width: 768px) {
+            padding: 60px 0;
+        }
+    }
+
+}
+
+.logo__container {
+    margin-top: 60px;
+}
+
+.main-section__cards {
+    flex-grow: 1;
+}
+
+// entry page
+.main-content {
+    gap: 28px;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 30px 30px;
+
+
+    &__list {
+        max-width: 1360px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 30px 60px;
+
+        @media screen and (min-width:768px) {
+            padding: 0px 60px 60px;
+        }
+
+        &-box {
+            border-top: 4px solid $grey-border;
+
+            &>h2 {
+                color: $white-color;
+                margin: 30px 0;
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        padding: 60px 60px;
+    }
+
+    &__img {
+        max-width: 92px;
+    }
+
+    &__p {
+        color: $white-color;
+        margin: 0 0 0 0;
+    }
+
+    &>h1 {
+        margin: 0 0 0 0;
+    }
+
+    &__button {
+        background-color: $active-reg;
+        text-decoration: none;
+        color: $white-color;
+        padding: 18px 30px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border: transparent;
+    }
+
+    &__ul {
+        list-style: none;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        gap: 15px;
+
+        &-box {
+            gap: 30px;
+
+            @media screen and (min-width:768px) {
+                gap: 60px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            width: 50%;
+        }
+
+        &-dot {
+            display: inline-block;
+            border-radius: 50%;
+            color: $accent-color;
+            background-color: $accent-color;
+            border: 3px solid;
+            margin-right: 8px;
+        }
+
+        &-txt {
+            margin: 0 0 0 0;
+            color: $white-color;
+            font-weight: $font-400;
+            font-size: $f-18;
+        }
+    }
+
+}
+
+// popup
+input {
+    border-radius: 8px;
+    border: transparent;
+}
+
+.grey-section {
+    background-color: $grey-bg;
+    margin-top: 60px;
+}
+
+.modal {
+    --bs-modal-width: 650px;
+
+    & h3 {
+        margin: 0 0 0 0;
+    }
+
+    &-header {
+        border: none;
+        padding: 30px;
+
+        &>button {
+            background-color: transparent;
+            border: transparent;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: $grey-separator;
+            }
+        }
+    }
+
+    &-body {
+        padding: 0 30px;
+
+        &>form {
+            gap: 30px;
+        }
+    }
+
+    &-footer {
+        &>button {
+            width: 100%;
+            margin: 0 0 0 0;
+        }
+
+        border: none;
+        padding: 0 0 30px;
+    }
+}

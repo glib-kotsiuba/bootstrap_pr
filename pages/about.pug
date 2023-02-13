@@ -1,0 +1,141 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title About us
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+        link(rel="stylesheet", href="../styles/about.min.css")
+    body
+        header.main-section__header
+            .container-header.container-header-box
+                .header-grid
+                    .header-grid__logo.d-flex.align-items-start
+                        a(href="../index.html") 
+                            img.d-md-none(src="../assets/header/svg/Logo_bright-small.svg", alt="")
+                            img.d-none.d-md-block(src="../assets/header/svg/Logo_bright.svg", alt="")
+                        img.main-section__header-slash.d-md-none(src="../assets/header/svg/Slash_small.svg", alt="")
+                        img.main-section__header-slash.d-none.d-md-block(src="../assets/header/svg/Slash.svg", alt="")
+                        span.header-current about us
+                    .header-grid__info.d-flex.align-items-center.justify-content-between.justify-content-md-center
+                        .button-container
+                            button.lang_type Ук
+                            button.lang_type Ру
+                            button.lang_type En
+                        span.dot-separator.d-none.d-md-inline-block
+                        p.adress.d-none.d-md-inline-block Kyiv, Mechnikova str, 14/1
+                        span.dot-separator.d-none.d-md-inline-block
+                        p.telephone 0800 211 927
+                        span.dot-separator.d-none.d-md-inline-block
+                        a.fb-link.d-none.d-md-inline-block(href='#')
+                            svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                g(clip-path='url(#clip0_22721_6686)')
+                                    path(class= "fb-link__hover", d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z' fill='#B3B3BA')
+                                defs
+                                    clippath#clip0_22721_6686
+                                        rect(width='24' height='24' fill='white')
+                    nav.header-grid__nav.d-flex.justify-content-md-start
+                        button.btn.d-md-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasResponsive' aria-controls='offcanvasResponsive')
+                            img(src="../assets/header/svg/Hamburger.svg", alt="", class="hamburger-button")
+                        #offcanvasResponsive.offcanvas-md.offcanvas-bottom.offcanvas-styling(tabindex='-1' aria-labelledby='offcanvasResponsiveLabel')
+                            .offcanvas-header.justify-content-end
+                                button.btn-close(type='button' data-bs-dismiss='offcanvas' data-bs-target='#offcanvasResponsive' aria-label='Close')
+                            .offcanvas-body.d-flex.flex-column.flex-md-row.offcanvas-styling__body
+                                a.nav-bar__link(href="./about.html") about us
+                                a.nav-bar__link(href="./services.html") services
+                                a.nav-bar__link(href="./team.html") team
+                                a.nav-bar__link(href="./publications.html") publications
+                                a.nav-bar__link(href="./contact.html") contact
+        main
+            .d-flex.main-txt
+                .main-txt__introduction
+                    h1.h2.h-adaptive We turn over the idea of legal services
+                    p Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve the adoption of a number of decisions that are important for the industry. Many people form the practice of applying the law of the sea in Ukraine.<br><br>HLEGAL is a reliable business partner, confirmed by stable cooperation with international law firms, the trust of large Ukrainian and international companies, and the recognition of professional ratings.
+                .main-txt__advantages.d-flex.flex-column
+                    .d-flex.flex-column.main-txt__advantages-item
+                        .d-flex.flex-row.align-items-center.main-txt__advantages-header
+                            img(src="../assets/about_page/svg/Experience.svg", alt="")
+                            span.h2.main-txt__advantages-number 10+
+                        span.main-txt__advantages-txt years of relevant experience
+                    .d-flex.flex-column.main-txt__advantages-item
+                        .d-flex.flex-row.align-items-center.main-txt__advantages-header
+                            img(src="../assets/about_page/svg/Clients.svg", alt="")
+                            span.h2.main-txt__advantages-number 30+
+                        span.main-txt__advantages-txt active clients who entrust us with their orders on a monthly basis
+                    .d-flex.flex-column.main-txt__advantages-item
+                        .d-flex.flex-row.align-items-center.main-txt__advantages-header
+                            img(src="../assets/about_page/svg/Probono.svg", alt="")
+                            span.h2.main-txt__advantages-number 500+
+                        span.main-txt__advantages-txt hours of pro bono work annually
+            img.main-img.img-fluid(src="../assets/about_page/img/Team.png", alt="")
+            .d-flex.main-txt.main-txt2
+                p The historically unchanged legal profession has begun to reformat in recent years. Clients are feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution in legal services has begun and is imminent.<br><br>Quality is what we care about the most.<br><br>It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And we want our clients to trust us too.
+                h2.h2.h-adaptive Quality is what we care about the most.
+        .grey-section
+            h5.h5 Achievments
+            #carousel-achievements.carousel.slide
+                .carousel-inner
+                    .carousel-item.active
+                        .carousel-item-box.d-flex.flex-row.row
+                            .carousel-item__card.col-12.col-md-3
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-1.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-2.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-3.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-4.png' alt='...')
+                    .carousel-item
+                        .carousel-item-box.d-flex.flex-row.row
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-4.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-3.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-2.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-1.png' alt='...')
+                    .carousel-item
+                        .carousel-item-box.d-flex.flex-row.row
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-1.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-3.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-4.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-2.png' alt='...')
+                    .carousel-item
+                        .carousel-item-box.d-flex.flex-row.row
+                            .carousel-item__card.col-12.col-md-3
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-4.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-3.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-1.png' alt='...')
+                            .carousel-item__card.col-12.col-md-3.d-none.d-md-block
+                                .carousel-item__card-bcg
+                                    img(src='../assets/about_page/img/Achievment-2.png' alt='...')
+                .carousel-indicators
+                    button.carousel-indicators-button.active(type='button' data-bs-target='#carousel-achievements' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                    button.carousel-indicators-button(type='button' data-bs-target='#carousel-achievements' data-bs-slide-to='1' aria-label='Slide 2')
+                    button.carousel-indicators-button(type='button' data-bs-target='#carousel-achievements' data-bs-slide-to='2' aria-label='Slide 3')
+                    button.carousel-indicators-button(type='button' data-bs-target='#carousel-achievements' data-bs-slide-to='3' aria-label='Slide 4')
+            include ./partials/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')

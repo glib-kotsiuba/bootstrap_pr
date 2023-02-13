@@ -1,0 +1,123 @@
+@import './_var.scss';
+
+.button-more {
+    background-color: $active-reg;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 60px;
+    padding: 18px 30px;
+    color: $white-color;
+    text-decoration: none;
+}
+
+.container-header-box {
+    padding-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+        ;
+    }
+}
+
+// entry
+.main-article {
+    max-width: 1390px;
+    padding: 0 30px;
+    width: 100%;
+    margin: 30px auto 60px;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin: 60px auto;
+        padding: 0 60px;
+    }
+
+    & p {
+        margin: 0 0 0 0;
+    }
+
+    &__pub-header {
+        color: $alt-color;
+        font-size: $par-size;
+        font-weight: $font-700;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+            font-size: $h3-size;
+        }
+    }
+
+    &__head {
+        padding-bottom: 30px;
+        border-bottom: 4px solid $grey-separator;
+
+        &-adaptive {
+            font-weight: $font-700;
+            font-size: $header-current-min;
+            color: $main-color;
+
+            @media screen and (min-width:768px) {
+                font-size: $h2-size;
+            }
+        }
+
+        &-date {
+            font-weight: $font-700;
+            font-size: $date-size;
+            color: $grey-txt;
+            text-transform: uppercase;
+        }
+
+    }
+
+    &__img {
+        border-radius: 12px;
+        object-fit: cover;
+        // height: 100%;
+        width: 100%;
+        height: auto;
+
+        @media screen and (min-width: 320px) {
+            height: 300px;
+        }
+
+        @media screen and (min-width: 768px) {
+            height: 500px;
+        }
+
+        &-subtxt {
+            font-size: $h3-caps-size;
+            color: $grey-txt;
+            margin-top: 15px;
+        }
+    }
+
+    &__ol {
+        padding-left: 40px;
+        margin: 0 0 0 0;
+        gap: 15px;
+
+        & p {
+            margin-left: 10px;
+            font-size: $f-18;
+        }
+
+        &>li::marker {
+            color: $accent-color;
+            font-weight: $font-700;
+            font-size: $f-18;
+        }
+    }
+
+    &__social-links {
+        gap: 10px;
+        padding-top: 30px;
+        border-top: 4px solid $grey-separator;
+    }
+}
+
+.grey-section {
+    background-color: $grey-bg;
+    padding-top: 30px;
+}

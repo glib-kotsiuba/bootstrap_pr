@@ -1,0 +1,227 @@
+@import './var';
+
+* {
+    box-sizing: border-box;
+}
+
+.card-img {
+    width: 92px;
+    height: 92px;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+
+    &__head {
+        margin: 30px 0 15px 0;
+        color: $active-reg;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    &__img {
+        width: 92px;
+        height: 92px;
+    }
+
+    &__txt {
+        margin-bottom: 30px;
+        color: $white-color;
+        font-weight: $font-400;
+        font-size: $par-size;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+// logo cards
+.logo-card {
+
+    &__blue {
+        background-color: #1C4280;
+
+        @media screen and (min-width: 1720px) {
+            border-radius: 12px 0 0 0;
+        }
+
+        ;
+    }
+
+    &__darkblue {
+        background-color: #143646;
+    }
+
+    &__orange {
+        background-color: #FD9339;
+    }
+
+    &__purple {
+        background-color: #9E4DC3;
+
+        @media screen and (min-width: 1720px) {
+            border-radius: 0 12px 0 0;
+        }
+
+        ;
+    }
+
+    &__grey {
+        background-color: #E2E2E4;
+    }
+
+    &__red {
+        background-color: #C71C36;
+    }
+
+    &__lightblue {
+        background-color: #DCF3F9;
+    }
+
+    &__grey2 {
+        background-color: #EAEAEA;
+
+        @media screen and (min-width: 1720px) {
+            border-radius: 0 0 0 12px;
+        }
+
+        ;
+    }
+
+    &__darkpurple {
+        background-color: #282240;
+    }
+
+    &__darkblue2 {
+        background-color: #1D4568;
+    }
+
+    &__black {
+        background-color: black;
+
+        @media screen and (min-width: 1720px) {
+            border-radius: 0 0 12px 0;
+        }
+
+        ;
+    }
+}
+
+.img-container {
+    min-height: 120px;
+}
+
+.logo__container {
+    margin: 0 auto;
+    max-width: 1720px;
+}
+
+.row-border {
+    max-width: 100vw;
+
+    @media screen and (min-width: 1720px) {
+        margin-bottom: 60px;
+    }
+}
+
+.logo__header {
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 30px;
+}
+
+// publication cards
+
+.publication-card {
+    border-radius: 8px;
+    padding: 0 15px 30px;
+
+    &__img {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+    }
+
+    // &__row {
+    //     --bs-gutter-x: 30px;
+    //     --bs-gutter-y: 30px;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     margin-top: calc(-1 * var(--bs-gutter-y));
+    //     margin-right: calc(-.5 * var(--bs-gutter-x));
+    //     margin-left: calc(-.5 * var(--bs-gutter-x));
+    // }
+
+    &__container {
+        max-width: 1600px;
+        padding: 0 30px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 60px;
+        }
+    }
+
+    &__bcg {
+        background-color: white;
+        border-radius: 8px;
+        height: 100%;
+    }
+
+    &__link {
+        margin: 30px 0 0 0;
+        color: $active-reg;
+        font-size: $h4-size;
+        font-weight: $font-700;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent-color;
+        }
+
+        &-noimg {
+            margin-top: 0;
+        }
+    }
+
+    &__txt-container {
+        margin: 0 30px;
+
+        &>.pubdate {
+            padding: 15px 0;
+            display: block;
+            border-bottom: 4px solid $grey-separator;
+            margin-bottom: 15px;
+            color: $grey-txt;
+            text-transform: uppercase;
+            font-weight: $font-700;
+            font-size: $date-size;
+        }
+
+        &>p {
+            font-size: $h3-caps-size;
+            font-weight: $font-400;
+            color: black;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.publication-header {
+    margin: 5px 0 30px 0;
+
+    @media screen and (min-width: 768px) {
+        margin: 10px 0 30px 0;
+    }
+}
+
+.recommended {
+    background-color: $grey-bg;
+    padding: 30px 0;
+}

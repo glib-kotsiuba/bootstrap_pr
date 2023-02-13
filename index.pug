@@ -1,0 +1,117 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+        link(rel="stylesheet", href="./styles/index.min.css")
+    body 
+        .section-gradient
+            .section-gradient__shadow.section-gradient__shadow--1
+            .section-gradient__shadow.section-gradient__shadow--2
+            div.section-main
+                .section-main__wrap
+                    img.section-main__wrap__img(src="./assets/homepage/svg/main.svg", alt="")
+                div.main-section
+                    .main-section__header
+                        include ./pages/partials/header_index.pug
+                    main.main-section__text
+                        h1.main-section__head your legal solutions provider
+                    .main-section__button
+                        a(href="#scroll", class="scroll-link")
+                            svg(width='42' height='42' viewbox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                g(clip-path='url(#clip0_22728_11340)')
+                                    circle(opacity='0.5' cx='21' cy='21' r='20' stroke='white' stroke-width='2' class="scroll-circle")
+                                    path(d='M12 18L21 27L30 18' stroke='white' stroke-width='2' class="scroll-circle")
+                                defs
+                                    clippath#clip0_22728_11340
+                                        rect(width='42' height='42' fill='white')
+            section#scroll
+                #carouselExampleCaptions.carousel.slide.info-carousel.carousel-fade
+                    div.info-carousel__buttons
+                        button.info-carousel__button.active(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                            span Consistent
+                        button.info-carousel__button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1' aria-label='Slide 2')
+                            span Customer oriented
+                        button.info-carousel__button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2' aria-label='Slide 3')
+                            span Innovative
+                        button.info-carousel__button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='3' aria-label='Slide 4')
+                            span Business oriented
+                    .carousel-inner.info-carousel__text-box
+                        .carousel-item.active.info-carousel__item
+                            .text-white
+                                h5 We turn the idea of legal services
+                                p Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.
+                        .carousel-item.info-carousel__item
+                            .text-white
+                                h5 Customer oriented
+                                p In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
+                        .carousel-item.info-carousel__item
+                            .text-white
+                                h5 Inovative
+                                p An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.
+                        .carousel-item.info-carousel__item
+                            .text-white
+                                h5 Business oriented
+                                p And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.
+            section.main-cards.container
+                a.arrow-link(href="./pages/services.html") services
+                    svg(width='12' height='13' viewbox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path.arrow-hov(d='M3.5 2L8 6.5L3.5 11' stroke='#24A3FF' stroke-width='2')
+                h2.h2.cards-header.h-adaptive What can we do better than others?
+                include ./pages/partials/cards.pug
+        section.slider
+            #carouselteam.carousel.slide.team-slider
+                .carousel-inner.team-slider__card-box
+                    .carousel-item.team-slider__card.active
+                        .team-slider__wrapper.d-flex.flex-column
+                            .team-slider__img-box
+                                img.team-slider__img.img-fluid(src='./assets/team_page/img/team_photos/team_1.png' alt='...')
+                            .team-slider__textbox
+                                a.arrow-link(href="./pages/team.html") team
+                                    svg(width='8' height='11' viewbox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path.arrow-hov(d='M1.5 1L6 5.5L1.5 10' stroke='#24A3FF' stroke-width='2')
+                                p.gradient-txt.txt-adaptive We are used to taking responsibility and always guarantee honest, timely assistance, even in situations where most are powerless.
+                                p.team-slider__name Alexander Alexandrovsky
+                                span Managing partner
+                    .carousel-item.team-slider__card
+                        .team-slider__wrapper.d-flex.flex-column
+                            .team-slider__img-box
+                                img.team-slider__img.img-fluid(src='./assets/team_page/img/team_photos/team_2.png' alt='...')
+                            .team-slider__textbox
+                                a.arrow-link(href="#") team
+                                    svg(width='8' height='11' viewbox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path.arrow-hov(d='M1.5 1L6 5.5L1.5 10' stroke='#24A3FF' stroke-width='2')
+                                p.gradient-txt.txt-adaptive We are used to taking responsibility and always guarantee honest, timely assistance, even in situations where most are powerless.
+                                p.team-slider__name Evgeny Patrikov
+                                span Equity partner, Attorney-at-law
+                    .carousel-item.team-slider__card
+                        .team-slider__wrapper.d-flex.flex-column
+                            .team-slider__img-box
+                                img.team-slider__img.img-fluid(src='./assets/team_page/img/team_photos/team_3.png' alt='...')
+                            .team-slider__textbox
+                                a.arrow-link(href="#") team
+                                    svg(width='8' height='11' viewbox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path.arrow-hov(d='M1.5 1L6 5.5L1.5 10' stroke='#24A3FF' stroke-width='2')
+                                p.gradient-txt.txt-adaptive We are used to taking responsibility and always guarantee honest, timely assistance, even in situations where most are powerless.
+                                p.team-slider__name Vladislav Melnik
+                                span Associate
+                div.team-slider__button-box
+                    button.team-slider__button.active(type='button' data-bs-target='#carouselteam' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                    button.team-slider__button(type='button' data-bs-target='#carouselteam' data-bs-slide-to='1' aria-label='Slide 2')
+                    button.team-slider__button(type='button' data-bs-target='#carouselteam' data-bs-slide-to='2' aria-label='Slide 3')
+        section.logo__cards.container.logo__container
+            h5.h5.logo__header.text-center They already trust us
+            include ./pages/partials/logo-cards.pug
+        section.recommended
+            .container.publication-card__container
+                a.arrow-link(href="./pages/publications.html") publications
+                    svg(width='12' height='13' viewbox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path.arrow-hov(d='M3.5 2L8 6.5L3.5 11' stroke='#24A3FF' stroke-width='2')
+                h2.h-adaptive.h2.publication-header We have something to tell
+                include ./pages/partials/publication-cards_index.pug
+        .footer-section
+            include ./pages/partials/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')

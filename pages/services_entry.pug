@@ -1,0 +1,104 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+        link(rel="stylesheet", href="../styles/services.min.css")
+        title Document
+    body 
+        .section-gradient
+            .section-gradient__shadow.section-gradient__shadow--1
+            .section-gradient__shadow.section-gradient__shadow--2
+            header.main-section__header
+                .container-header
+                    .header-grid
+                        .header-grid__logo.d-flex.align-items-start
+                            a(href="../index.html") 
+                                img.d-md-none(src="../assets/header/svg/Logo_dark-small.svg", alt="")
+                                img.d-none.d-md-block(src="../assets/header/svg/Logo_dark.svg", alt="")
+                            img.main-section__header-slash.d-md-none(src="../assets/header/svg/Slash_small.svg", alt="")
+                            img.main-section__header-slash.d-none.d-md-block(src="../assets/header/svg/Slash.svg", alt="")
+                            span.header-current services
+                        .header-grid__info.d-flex.align-items-center.justify-content-between.justify-content-md-center
+                            .button-container
+                                button.lang_type Ук
+                                button.lang_type Ру
+                                button.lang_type En
+                            span.dot-separator.d-none.d-md-inline-block
+                            p.adress.d-none.d-md-inline-block Kyiv, Mechnikova str, 14/1
+                            span.dot-separator.d-none.d-md-inline-block
+                            p.telephone 0800 211 927
+                            span.dot-separator.d-none.d-md-inline-block
+                            a.fb-link.d-none.d-md-inline-block(href='#')
+                                svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    g(clip-path='url(#clip0_22721_6686)')
+                                        path(class= "fb-link__hover", d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z' fill='#B3B3BA')
+                                    defs
+                                        clippath#clip0_22721_6686
+                                            rect(width='24' height='24' fill='white')
+                        nav.header-grid__nav.d-flex.justify-content-md-start
+                            button.btn.d-md-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasResponsive' aria-controls='offcanvasResponsive')
+                                img(src="../assets/header/svg/Hamburger_dark.svg", alt="", class="hamburger-button")
+                            #offcanvasResponsive.offcanvas-md.offcanvas-bottom.offcanvas-styling(tabindex='-1' aria-labelledby='offcanvasResponsiveLabel')
+                                .offcanvas-header.justify-content-end
+                                    button.btn-close(type='button' data-bs-dismiss='offcanvas' data-bs-target='#offcanvasResponsive' aria-label='Close')
+                                .offcanvas-body.d-flex.flex-column.flex-md-row.offcanvas-styling__body
+                                    a.nav-bar__link(href="./about.html") about us
+                                    a.nav-bar__link(href="./services.html") services
+                                    a.nav-bar__link(href="./team.html") team
+                                    a.nav-bar__link(href="./publications.html") publications
+                                    a.nav-bar__link(href="./contact.html") contact
+            main
+                .main-content.d-flex.flex-column.align-items-center
+                    img.main-content__img(src="../assets/homepage/cards/icon1.svg", alt="")
+                    h1.h-adaptive.gradient-txt IT and e-commerce
+                    p.main-content__p.p-services An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.<br><br>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
+                    button.h4.main-content__button(type='button' data-bs-toggle='modal' data-bs-target='#popup') Free consultation
+                    #popup.modal.fade(tabindex='-1' aria-labelledby='popupLabel' aria-hidden='true')
+                        .modal-dialog
+                            .modal-content.grey-section
+                                .modal-header
+                                    h3.h2.h-adaptive We would like to help you
+                                    button(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                        img(src="../assets/Close.svg", alt="")
+                                .modal-body
+                                    form.d-flex.flex-column(action="https://fom.in.ua/echo", method="post")
+                                        .contact__form-box.d-flex.flex-column
+                                            input.contact__form_input(type="text", placeholder="Name", name="name")
+                                            textarea.contact__form_input.contact__form_input-message(type="text-area" placeholder="Message", name="message")
+                                        .contact__form-box.d-flex.flex-column
+                                            span How to answer you?
+                                            input.contact__form_input(type="text" placeholder="Phone number", name="phone")
+                                            input.contact__form_input(type="email" placeholder="Email", name="mail")
+                                        .modal-footer
+                                            button.h4.contact__form-button(type="submit") Send message
+                .main-content__list
+                    .main-content__list-box
+                        h2.h3 Services in this area:
+                        .d-flex.flex-column.flex-md-row.main-content__ul-box
+                            mixin listitem(listitemtxt)
+                                li
+                                    span.main-content__ul-dot
+                                    p.d-inline.main-content__ul-txt=listitemtxt
+                            ul.main-content__ul.d-flex.flex-column
+                                +listitem('support of investment projects for the development of port infrastructure;')
+                                +listitem('certification of GTS, entering information about them in mandatory databases and registers;')
+                                +listitem('registration of permits for the construction of port terminals;')
+                                +listitem('registration of permit and other mandatory documentation required for carrying out activities in the port (emission permit, conclusion on EIA, RTC, etc.);')
+                            ul.main-content__ul.d-flex.flex-column
+                                +listitem('support of procedures related to the lease of state property in the port;')
+                                +listitem('support of procedures related to confirmation of the status of port operator, maritime agent, foreign sailing line;')
+                                +listitem('support of procedures related to the inclusion of the company within the port;')
+                                +listitem('appeals against actions related to the illegal imposition of services in the port by monopoly companies.')
+        .grey-section
+            .recommended
+                .container.publication-card__container
+                    a.arrow-link(href="./publications.html") publications
+                        svg(width='12' height='13' viewbox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path.arrow-hov(d='M3.5 2L8 6.5L3.5 11' stroke='#24A3FF' stroke-width='2')
+                    h2.h2.h-adaptive.publication-header Recomended
+                    include ./partials/publication-cards.pug
+            include ./partials/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')

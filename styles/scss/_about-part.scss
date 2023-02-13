@@ -1,0 +1,145 @@
+@import './_var.scss';
+
+.main {
+    &-txt {
+        max-width: 1420px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 30px;
+        flex-direction: column;
+        gap: 30px;
+
+        &:nth-child(1) {
+            margin-top: 30px;
+
+            @media screen and (min-width: 768px) {
+                margin-top: 60px;
+            }
+        }
+
+        &2 {
+            margin-bottom: 60px;
+
+            @media screen and (min-width: 1024px) {
+                gap: 60px;
+            }
+
+            &>h2 {
+                @media screen and (min-width: 1024px) {
+                    min-width: 362px;
+                }
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 0 60px;
+        }
+
+        &__advantages {
+            padding-left: 30px;
+            border-left: 4px solid $grey-separator;
+            gap: 40px;
+
+            @media screen and (min-width: 1024px) {
+                min-width: 354px;
+            }
+
+            &-number {
+                font-weight: $font-700;
+                margin: 0 0 0 0;
+            }
+
+            &-txt {
+                font-size: $h4-size;
+                font-weight: $font-400;
+                line-height: 20px;
+                color: $main-color;
+            }
+
+            &-item {
+                gap: 10px;
+            }
+
+            &-header {
+                gap: 8px;
+            }
+        }
+
+        & p {
+            font-size: $p-slider-size;
+            font-weight: $font-400;
+            color: black;
+            line-height: 30px;
+            margin: 0 0 0 0;
+        }
+    }
+
+    &-img {
+        margin: 30px auto;
+        min-width: 99vw;
+
+        @media screen and (min-width: 768px) {
+            margin: 60px auto;
+        }
+    }
+}
+
+.carousel-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.carousel-item-box {
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+    }
+
+    & .carousel-item__card {
+        &-bcg {
+            background-color: white;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+
+            @media screen and (min-width: 1024px) {
+                height: 110px;
+            }
+
+            &>img {
+                height: 40px;
+
+                @media screen and (min-width: 1024px) {
+                    height: 60px;
+                }
+            }
+        }
+
+        padding: 0 20px;
+    }
+}
+
+.carousel-indicators {
+    position: inherit;
+    margin: 30px auto;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: $active-reg;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.grey-section>h5 {
+    padding: 30px 15px;
+    text-align: center;
+}

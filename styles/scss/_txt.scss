@@ -1,0 +1,141 @@
+@import './_var.scss';
+
+body {
+    font-family: $font-family;
+}
+
+.p {
+    font-weight: $font-400;
+    font-size: $par-size;
+    line-height: 26px;
+}
+
+a {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hero {
+    font-size: $hero-size;
+    font-weight: $font-700;
+    color: $gradient-red-txt;
+    line-height: 37px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+.legal-solution {
+    font-size: $hero-size;
+    color: white;
+}
+
+.main-section__head {
+    font-size: $hero-size;
+    font-weight: $font-700;
+    color: $white-color;
+    text-align: center;
+}
+
+.adress {
+    color: $white-color;
+    font-weight: $font-400;
+    font-size: $par-size;
+
+    @media screen and (min-width: 1024px) {
+        color: $grey-txt;
+    }
+}
+
+.telephone {
+    color: $white-color;
+    font-weight: $font-700;
+    font-size: $par-size;
+}
+
+.header-current {
+    font-weight: $font-400;
+    font-size: $header-current-min;
+    color: $white-color;
+
+    @media screen and (min-width:768px) {
+        font-size: $header-current;
+    }
+}
+
+.h-adaptive {
+    font-weight: $font-700;
+    font-size: $h2-size;
+
+    @media screen and (min-width: 768px) {
+        font-size: $hero-size;
+    }
+}
+
+.arrow-link {
+    color: $active-reg;
+    text-decoration: none;
+    font-weight: $font-700;
+    font-size: $h3-caps-size;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.h4 {
+    font-weight: $font-700;
+    font-size: $h4-size;
+}
+
+.h2 {
+    background: -webkit-linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.h3 {
+    font-weight: $font-700;
+    font-size: $h3-size;
+}
+
+.txt-adaptive {
+    font-weight: $font-700;
+    font-size: $h2-size;
+
+    @media screen and (min-width: 768px) {
+        font-size: $hero-size;
+    }
+}
+
+.gradient-txt {
+    background: -webkit-linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.h5 {
+    font-weight: $font-700;
+    font-size: $h3-caps-size;
+}
+
+.p-services {
+    font-size: $p-slider-size;
+    font-weight: $font-400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.contact-txt {
+    font-size: $f-21;
+    font-weight: $font-400;
+}
+
+.grey-section {
+    background-color: $grey-bg;
+}

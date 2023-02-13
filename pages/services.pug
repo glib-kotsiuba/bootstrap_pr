@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Services
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+        link(rel="stylesheet", href="../styles/services.min.css")
+    body
+        .section-gradient.d-flex.flex-column
+            .section-gradient__shadow.section-gradient__shadow--1
+            .section-gradient__shadow.section-gradient__shadow--2
+            header.main-section__header
+                .container-header
+                    .header-grid
+                        .header-grid__logo.d-flex.align-items-start
+                            a(href="../index.html") 
+                                img.d-md-none(src="../assets/header/svg/Logo_dark-small.svg", alt="")
+                                img.d-none.d-md-block(src="../assets/header/svg/Logo_dark.svg", alt="")
+                            img.main-section__header-slash.d-md-none(src="../assets/header/svg/Slash_small.svg", alt="")
+                            img.main-section__header-slash.d-none.d-md-block(src="../assets/header/svg/Slash.svg", alt="")
+                            span.header-current services
+                        .header-grid__info.d-flex.align-items-center.justify-content-between.justify-content-md-center
+                            .button-container
+                                button.lang_type Ук
+                                button.lang_type Ру
+                                button.lang_type En
+                            span.dot-separator.d-none.d-md-inline-block
+                            p.adress.d-none.d-md-inline-block Kyiv, Mechnikova str, 14/1
+                            span.dot-separator.d-none.d-md-inline-block
+                            p.telephone 0800 211 927
+                            span.dot-separator.d-none.d-md-inline-block
+                            a.fb-link.d-none.d-md-inline-block(href='#')
+                                svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    g(clip-path='url(#clip0_22721_6686)')
+                                        path(class= "fb-link__hover", d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z' fill='#B3B3BA')
+                                    defs
+                                        clippath#clip0_22721_6686
+                                            rect(width='24' height='24' fill='white')
+                        nav.header-grid__nav.d-flex.justify-content-md-start
+                            button.btn.d-md-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasResponsive' aria-controls='offcanvasResponsive')
+                                img(src="../assets/header/svg/Hamburger_dark.svg", alt="", class="hamburger-button")
+                            #offcanvasResponsive.offcanvas-md.offcanvas-bottom.offcanvas-styling(tabindex='-1' aria-labelledby='offcanvasResponsiveLabel')
+                                .offcanvas-header.justify-content-end
+                                    button.btn-close(type='button' data-bs-dismiss='offcanvas' data-bs-target='#offcanvasResponsive' aria-label='Close')
+                                .offcanvas-body.d-flex.flex-column.flex-md-row.offcanvas-styling__body
+                                    a.nav-bar__link(href="./about.html") about us
+                                    a.nav-bar__link(href="./services.html") services
+                                    a.nav-bar__link(href="./team.html") team
+                                    a.nav-bar__link(href="./publications.html") publications
+                                    a.nav-bar__link(href="./contact.html") contact
+            main.main-section__cards.d-flex.align-items-center
+                .container
+                    h2.h2.cards-main__header.h-adaptive What can we do better than others?
+                    mixin card(svgpath, cardhead, cardp)
+                        .card.col-12.col-md-6.col-lg-4
+                            img(src=`../assets/homepage/cards/icon${svgpath}.svg`, alt="", class="card__img")
+                            a.h4.card__head.card-link(href="./services_entry.html")=cardhead
+                            p.card__txt=cardp
+                    .row.cards-main
+                        +card('1', 'IT and e-commerce', 'An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.')
+                        +card('2','Comprehensive daily legal support','In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.')
+                        +card('3','Structuring corporate relationships','Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.')
+                        +card('4','Building contractual relations','Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.')
+                        +card('5','Protection of business, intellectual property','And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.')
+                        +card('6','Judicial representation','Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?')
+        section.logo__cards.container.logo__container
+            h5.h5.logo__header.text-center They already trust us
+            mixin logo-card(imgpath, color, dnone, inline, mobile, tablet, desktop)
+                .img-container.d-flex.justify-content-center.align-items-center(class=`logo-card__${color}`, class=`${dnone}`, class=`${inline}`, class=`${mobile}`, class=`${tablet}`, class=`${desktop}`)
+                    img.logo-card(src=`../assets/homepage/cards/logo/logo${imgpath}.png`, alt="")
+            .row.row-border
+                +logo-card('1','blue','','','col-12','col-md-4','col-lg-3')
+                +logo-card('2','darkblue','','','col-12','col-md-4','col-lg-3')
+                +logo-card('3','orange','','','col-12','col-md-4','col-lg-3')
+                +logo-card('4','purple','','','col-12','col-md-4','col-lg-3')
+                +logo-card('5','orange','','','col-12','col-md-4','col-lg-3')
+                +logo-card('6','grey','','','col-12','col-md-4','col-lg-3')
+                +logo-card('7','red','d-none','d-md-flex','col-12','col-md-4','col-lg-3')
+                +logo-card('8','lightblue','d-none','d-md-flex','col-12','col-md-4','col-lg-3')
+                +logo-card('9','grey2','d-none','d-md-flex','col-12','col-md-4','col-lg-3')
+                +logo-card('10','darkpurple','d-none','d-md-flex','col-12','col-md-4','col-lg-3')
+                +logo-card('11','darkblue2','d-none','d-md-flex','col-12','col-md-4','col-lg-3')
+                +logo-card('12','black','d-none','d-md-flex','col-12','col-md-4','col-lg-3')
+        include ./partials/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')

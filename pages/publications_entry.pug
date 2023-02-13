@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Publications
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+        link(rel="stylesheet", href="../styles/publications.min.css")
+    body
+        header.main-section__header
+            .container-header
+                .header-grid
+                    .header-grid__logo.d-flex.align-items-start
+                        a(href="../index.html") 
+                            img.d-md-none(src="../assets/header/svg/Logo_bright-small.svg", alt="")
+                            img.d-none.d-md-block(src="../assets/header/svg/Logo_bright.svg", alt="")
+                        img.main-section__header-slash.d-md-none(src="../assets/header/svg/Slash_small.svg", alt="")
+                        img.main-section__header-slash.d-none.d-md-block(src="../assets/header/svg/Slash.svg", alt="")
+                        span.header-current team
+                    .header-grid__info.d-flex.align-items-center.justify-content-between.justify-content-md-center
+                        .button-container
+                            button.lang_type Ук
+                            button.lang_type Ру
+                            button.lang_type En
+                        span.dot-separator.d-none.d-md-inline-block
+                        p.adress.d-none.d-md-inline-block Kyiv, Mechnikova str, 14/1
+                        span.dot-separator.d-none.d-md-inline-block
+                        p.telephone 0800 211 927
+                        span.dot-separator.d-none.d-md-inline-block
+                        a.fb-link.d-none.d-md-inline-block(href='#')
+                            svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                g(clip-path='url(#clip0_22721_6686)')
+                                    path(class= "fb-link__hover", d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z' fill='#B3B3BA')
+                                defs
+                                    clippath#clip0_22721_6686
+                                        rect(width='24' height='24' fill='white')
+                    nav.header-grid__nav.d-flex.justify-content-md-start
+                        button.btn.d-md-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasResponsive' aria-controls='offcanvasResponsive')
+                            img(src="../assets/header/svg/Hamburger.svg", alt="", class="hamburger-button")
+                        #offcanvasResponsive.offcanvas-md.offcanvas-bottom.offcanvas-styling(tabindex='-1' aria-labelledby='offcanvasResponsiveLabel')
+                            .offcanvas-header.justify-content-end
+                                button.btn-close(type='button' data-bs-dismiss='offcanvas' data-bs-target='#offcanvasResponsive' aria-label='Close')
+                            .offcanvas-body.d-flex.flex-column.flex-md-row.offcanvas-styling__body
+                                a.nav-bar__link(href="./about.html") about us
+                                a.nav-bar__link(href="./services.html") services
+                                a.nav-bar__link(href="./team.html") team
+                                a.nav-bar__link(href="./publications.html") publications
+                                a.nav-bar__link(href="./contact.html") contact
+        main.main-article.d-flex.flex-column.align-items-center
+            img.main-article__img(src="../assets/publication_page/entry_page/img/cover.jpg", alt="")
+            div.main-article__head
+                h1.main-article__head-adaptive Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
+                span.main-article__head-date september 29
+            p.p On January 21, the French National Data Protection Commission (CNIL) announced on its website that it had fined Google for violating the EU's General Data Protection Regulation (GDPR). It took six months for the EU countries to make a quality level-up in the amount of fines for non-compliance with this standard. Prior to that, the fine was mainly € 20,000-30,000, with the largest fine amounting to € 400,000 and related to a hospital in Portugal. But this precedent is interesting not so much the amount of the fine as the rigidity of the regulator's approaches. Denis Beregovyi, Axon Partners, explains why, especially for Mind.<br><br>For what? The group complaints against Google arrived at CNIL on the same day that the GDPR came into force. The complainants reported that Google processed users' personal data without due cause, in particular to create personalized advertising offers.
+            h2.h2.h-adaptive To the attention of Ukrainian security officers: the inspection was conducted online, without searches, without seizure of servers or other visible interference for business. And so it was possible.
+            div.w-100
+                h3.main-article__pub-header According to the results of CNIL inspections revealed violations of two requirements of the GDPR:
+                ol.main-article__ol.d-flex.flex-column
+                    li
+                        p Transparency and awareness of users about the processing of personal data.
+                    li
+                        p Lack of proper user consent for the processing of personal data for the purpose of personalizing advertising.
+            p.p In the case of personalization of advertising, Google was sure to obtain the consent of users, because, firstly, when creating Google accounts, the user agrees to the Privacy Policy, and secondly, Google has a section "Ads personalization", where you can disable this feature.
+            div.d-flex.flex-column.align-items-center
+                img.img-fluid(src="../assets/publication_page/entry_page/img/Illustration.jpg", alt="")
+                span.text-center.main-article__img-subtxt This is what the ad personalization settings window in your Google Account looks like
+            p.p However, CNIL does not think so, because the information about the personalization of advertising is not clear enough to users. As an example, the Commission claims that the relevant "Personalization" window does not contain information on the full range of Google services that collect and process personal data for this purpose (YouTube, Google search, Play Store, Google pictures, Gmail, etc.), and therefore, the user cannot realize to what extent the data is used and how exactly they can be combined.
+            div
+                h3.main-article__pub-header So, let's walk through the text of the CNIL decision
+                p.p Why France and not Ireland. Google operates in Europe through a legal entity in Ireland. But the case was not initiated by the Irish, but by the French regulator. This is why it happened.<br><br>If data processing decisions are taken anywhere outside the EU, there is a one-stop mechanism - where the complaint is received, the body considers it. Because Google's data processing center is located in the United States and the complaint was first received in France, CNIL considered it.
+            div.d-flex.flex-row.justify-content-start.w-100.main-article__social-links
+                a(href="#") 
+                    img(src="../assets/publication_page/entry_page/svg/fb_logo.svg", alt="")
+                a(href="#")
+                    img(src="../assets/publication_page/entry_page/svg/tg_logo.svg", alt="")
+                a(href="#")
+                    img(src="../assets/publication_page/entry_page/svg/in_logo.svg", alt="")
+        .grey-section
+            .container.publication-card__container
+                a.arrow-link(href="./publications.html") publications
+                    svg(width='12' height='13' viewbox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path.arrow-hov(d='M3.5 2L8 6.5L3.5 11' stroke='#24A3FF' stroke-width='2')
+                h2.h-adaptive.h2.publication-header We have something to tell
+                include ./partials/publication-cards.pug
+            include ./partials/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')

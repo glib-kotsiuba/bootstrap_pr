@@ -1,0 +1,12 @@
+mixin publication-card(imagepath, cardheader, pubdate, cardtext, colmobile, coltablet, coldesktop)
+    .card.publication-card(class=`${colmobile}`, class=`${coltablet}`, class=`${coldesktop}`)
+        .publication-card__bcg
+            img.publication-card__img(src=`../assets/publication_page/img/publication${imagepath}.jpg`, alt="")
+            .publication-card__txt-container
+                a.publication-card__link(href="./publications_entry.html")=cardheader
+                span.pubdate=pubdate
+                p=cardtext
+.row.publication-card__row
+    +publication-card('1','Equity associate','April 22',"I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…",'col-12','col-md-6','col-lg-4')
+    +publication-card('2','Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR','September 29','And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.','col-12','col-md-6','col-lg-4')
+    +publication-card('3','Millennial Testament','August 19','What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…','col-12','col-md-12','col-lg-4')

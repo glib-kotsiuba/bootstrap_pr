@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Team
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous')
+        link(rel="stylesheet", href="../styles/team.min.css")
+    body
+        include ./partials/header_white.pug
+        main.main-container
+            h1.h2.h-adaptive We are used to taking responsibility and always guarantee honest, timely assistance, even in situations where most are powerless.
+        .teamcard_container
+            mixin teamcard(imgpath, name, job)
+                .card.teamcard.col-12.col-md-6.col-lg-4
+                    div
+                        img.teamcard_img(src=`../assets/team_page/img/team_photos/team_${imgpath}.png`, alt="")
+                    .d-flex.flex-row.justify-content-between
+                        .teamcard_txt-box
+                            a.teamcard_link(href="./team_entry.html")=name
+                            span.teamcard_job=job
+                        div
+                            a.teamcard_link(href="./team_entry.html")
+                                svg.teamcard_svg(width='32' height='32' viewbox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    circle(cx='16' cy='16' r='16' fill='#F5F5FA')
+                                    path.teamcard_arrow(d='M13.5 23.5L20.5 16.5L13.5 9.5' stroke='#24A3FF' stroke-width='2')
+            .row.justify-content-center
+                +teamcard('1','Alexandr Alexandrovsky','Managing partner')
+                +teamcard('2','Evgeny Patrikov','Equity partner, Attorney-at-law')
+                +teamcard('3','Vladislav Melnik','Associate')
+                +teamcard('4','Sergey Binn','Associate')
+                +teamcard('5','Oksana Kobzar','Equity partner, Attorney-at-law')
+                +teamcard('6','Julia Wolk','Associate, Attorney-at-law')
+        .grey-section
+            include ./partials/footer.pug
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN' crossorigin='anonymous')

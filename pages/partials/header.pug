@@ -1,0 +1,36 @@
+header.main-section__header
+    .container-header
+        .header-grid
+            .header-grid__logo
+                a(href="../index.html") 
+                    img.d-md-none(src="../assets/header/svg/Logo_dark-small.svg", alt="")
+                    img.d-none.d-md-block(src="../assets/header/svg/Logo_dark.svg", alt="")
+            .header-grid__info.d-flex.align-items-center.justify-content-between.justify-content-md-center
+                .button-container
+                    button.lang_type Ук
+                    button.lang_type Ру
+                    button.lang_type En
+                span.dot-separator.d-none.d-md-inline-block
+                p.adress.d-none.d-md-inline-block Kyiv, Mechnikova str, 14/1
+                span.dot-separator.d-none.d-md-inline-block
+                p.telephone 0800 211 927
+                span.dot-separator.d-none.d-md-inline-block
+                a.fb-link.d-none.d-md-inline-block(href='#')
+                    svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        g(clip-path='url(#clip0_22721_6686)')
+                            path(class= "fb-link__hover", d='M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z' fill='#B3B3BA')
+                        defs
+                            clippath#clip0_22721_6686
+                                rect(width='24' height='24' fill='white')
+            nav.header-grid__nav.d-flex.justify-content-md-start
+                button.btn.d-md-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasResponsive' aria-controls='offcanvasResponsive')
+                    img(src="./assets/header/svg/Hamburger_dark.svg", alt="", class="hamburger-button")
+                #offcanvasResponsive.offcanvas-md.offcanvas-bottom.offcanvas-styling(tabindex='-1' aria-labelledby='offcanvasResponsiveLabel')
+                    .offcanvas-header.justify-content-end
+                        button.btn-close(type='button' data-bs-dismiss='offcanvas' data-bs-target='#offcanvasResponsive' aria-label='Close')
+                    .offcanvas-body.d-flex.flex-column.flex-md-row.offcanvas-styling__body
+                        a.nav-bar__link(href="./pages/about.html") about us
+                        a.nav-bar__link(href="./pages/services.html") services
+                        a.nav-bar__link(href="./pages/team.html") team
+                        a.nav-bar__link(href="./pages/publications.html") publications
+                        a.nav-bar__link(href="./pages/contact.html") contact
