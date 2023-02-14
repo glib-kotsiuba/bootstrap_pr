@@ -287,11 +287,18 @@ a {
 .header-grid__nav {
   grid-area: nav;
   max-width: fit-content;
+  padding-left: 105px;
+}
+@media screen and (min-width: 768px) {
+  .header-grid__nav {
+    padding-left: 0;
+  }
 }
 @media screen and (min-width: 1024px) {
   .header-grid__nav {
     margin-left: 73px;
     margin-top: 16px;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 768px) {

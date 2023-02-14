@@ -149,10 +149,16 @@
     &__nav {
         grid-area: nav;
         max-width: fit-content;
+        padding-left: 105px;
+
+        @media screen and (min-width:768px) {
+            padding-left: 0;
+        }
 
         @media screen and (min-width:1024px) {
             margin-left: 73px;
             margin-top: 16px;
+            padding-left: 0;
         }
 
     }
