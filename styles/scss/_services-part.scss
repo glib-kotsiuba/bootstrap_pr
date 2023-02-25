@@ -40,6 +40,10 @@
     margin: 0 auto;
     padding: 30px 30px;
 
+    &>h1 {
+        text-align: center;
+    }
+
 
     &__list {
         max-width: 1360px;

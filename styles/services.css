@@ -577,6 +577,9 @@ a {
   margin: 0 auto;
   padding: 30px 30px;
 }
+.main-content > h1 {
+  text-align: center;
+}
 .main-content__list {
   max-width: 1360px;
   margin: 0 auto;
